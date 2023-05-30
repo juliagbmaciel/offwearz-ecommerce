@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/log.png" />
+    <link rel="stylesheet" href="../style.css">
+    <title>Casacos offwearz</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- modelos de coat na lista e no carrinho -->
+    <div class="models">
+
+        <!-- coat na lista -->
+        <div class="coat-item">
+            <a href="">
+                <div class="coat-item--img"><img src="" /></div>
+                <div class="coat-item--name">--</div>
+                <div class="coat-item--price">R$ --</div>
+                <div class="coat-item--parc"></div>
+                <div class="coat-item--add">Adicionar ao carrinho</div>
+                <div class="coat-item--desc">--</div>
+            </a>
+            <a href="">
+                
+            </a>
+            
+            
+        </div>
+
+        <!-- coat no carrinho -->
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /models -->
+
+    <!-- .menu-openner aparecera no modo mobile -->
+    <header>
+        <h1><a href="../index.html"><img src="../img/logo.png" alt=""></a></h1>
+        <div class="menu-openner"><span>0</span><img src="./img/cartwhite.png" alt=""></i></div>
+    </header>
+    <!-- /menu-openner -->
+
+    <!-- conteudo principal -->
+    <main>
+        
+        <h2>Casacos</h2>
+
+        <div class="coat-area"></div>
+    </main>
+    <!-- /conteudo principal -->
+
+    <!-- aside do carrinho -->
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer"><i class="fa-sharp fa-solid fa-xmark" style="color: black"></i></div>
+            <h1>Carrinho de compras</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <!-- /aside do carrinho -->
+
+    <!-- janela modal .coatWindowArea -->
+    <div class="coatWindowArea">
+        <div class="coatWindowBody">
+            <div class="coatInfo--cancelMobileButton">Voltar</div>
+            <div class="coatBig">
+                <img src="" />
+            </div>
+            <div class="coatInfo">
+                <h1>--</h1>
+                <div class="coatInfo--desc">--</div>
+                <div class="coatInfo--sizearea">
+                    <div class="coatInfo--sector">Tamanho</div>
+                    <div class="coatInfo--sizes">
+                        <div data-key="P" class="coatInfo--size"><span>--</span></div>
+                        <div data-key="M" class="coatInfo--size"><span>--</span></div>
+                        <div data-key="G" class="coatInfo--size selected"><span>--</span></div>
+                    </div>
+                </div>
+                <div class="coatInfo--pricearea">
+                    <div class="coatInfo--sector">Preço</div>
+                    <div class="coatInfo--price">
+                        <div class="coatInfo--actualPrice">R$ --</div>
+                        <div class="coatInfo--qtarea">
+                            <button class="coatInfo--qtmenos">-</button>
+                            <div class="coatInfo--qt">1</div>
+                            <button class="coatInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="coatInfo--addButton">Adicionar ao carrinho</div>
+                <div class="coatInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- /janela modal .coatWindowArea -->
+    <script src="https://kit.fontawesome.com/da80efc2f4.js" crossorigin="anonymous"></script>
+    <script src="coats.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
