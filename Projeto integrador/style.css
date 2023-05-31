@@ -358,7 +358,91 @@ button:focus{
 .glow-on-hover:hover{
     background-color: #ff008c;
 }
-
+/*---------Login----------*/
+.entrar{
+    margin-top: 100px;
+    background-color: #ffffff;
+    width: 410px;
+    box-shadow: 4px 8px 24px #ccc;
+    height: 500px;
+    margin: 4rem auto;
+}
+.id{
+    display: flex;
+    background-color: #000;
+    height: 69px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.id span, .title span{
+    color: #ff008c;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84px;
+}
+.title h3{
+    font-size: 19px;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+}
+.content{
+    height: 82%;
+    width: 81%;
+    margin: 0 auto;
+}
+.content p{
+    color: #958c8c;
+    margin-bottom: 0;
+}
+#email, #senha{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #000;
+    width: -webkit-fill-available;
+}
+input[type="email"]:focus, input[type="password"] {
+    outline: none;
+}
+.infoslog input+p{
+    margin-top: 18px;
+}
+.infoslog span{
+    display: flex;
+    font-size: 13px;
+    justify-content: end;
+}
+.infoslog a{
+    color: #000;
+}
+.infoslog a:hover, .content a:hover {
+    text-decoration: none;
+    color: #ff008c;
+}
+.log--button{
+    margin: 22px auto;
+    height: 39px;
+    width: 147px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    transition: all ease .2s;
+}
+.log--button:hover{
+    transform: translateY(-5px);
+}
 /*----------modal-----------*/
 .modal-dialog{
     display: flex;
