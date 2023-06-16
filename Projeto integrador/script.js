@@ -24,26 +24,21 @@ let imgProducts = ["img/produtos/j_Es.png", "img/produtos/l_Ve.png", "img/produt
 var cards = document.querySelector('.cards');
 
 for (var i = 0; i < 3; i++) {
-    console.log("oi")
-    cards.innerHTML += `
-      <div class="item">
-                    <a href="#" class="position-absolute end-0 p-2 text-danger">
-                        <i class="fa-regular fa-heart"></i>
-                    </a><img src="${imgProducts[i]}" alt="">
-                    <p>${nameProducts[i]}</p>
-                    <h3>${valProducts[i].toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</br><span>7x de ${(valProducts[i]/7).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</span></h3>
-                    <div class="fix">
-                        <button class="glow-on-hover"><a href="./produtos/index.html">Ir às compras</a> </button>
-                    </div>
-                </div>
-                
+  cards.innerHTML += `
+    <div class="item">
+      <a href="#" class="position-absolute end-0 p-2 text-danger">
+        <i class="fa-regular fa-heart"></i>
+      </a>
+      <img src="${imgProducts[i]}" alt="">
+      <p>${nameProducts[i]}</p>
+      <h3>${valProducts[i].toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</br><span>7x de ${(valProducts[i]/7).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</span></h3>
+      <div class="fix">
+        <button class="glow-on-hover" data-index="${i+1}"><a href="./produtos/index.html">Ir às compras</a></button>
+      </div>
+    </div>
   `;
-  }
+}
 
-  
-  
-  
-  
   
   
   

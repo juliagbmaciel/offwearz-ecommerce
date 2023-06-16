@@ -132,6 +132,7 @@ header{
     box-sizing: border-box;
 }
 
+/*------------main------------*/
 .c {
     position: absolute;
     width: 915px;
@@ -148,6 +149,7 @@ header{
 body > main > div.carousel.slick-initialized.slick-slider.slick-dotted{
     margin-top: 100px;
 }
+/*------------carrossel------------*/
 .carousel{
     margin-top: 30rem;
     width: 1000px;
@@ -184,11 +186,15 @@ li p {
 strong { 
 line-height: 50px; 
 }
+
+
 .categorylist{
     text-align: center;
     display: flex;
     justify-content: center;
 }
+
+/*------------propaganda 1------------*/
 .text-separator{
     padding-left: 42px;
     padding-top: 107px;
@@ -211,6 +217,7 @@ line-height: 50px;
     background-size: cover;
     background-position: center;
 }
+/*------------cards------------*/
 .cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -261,15 +268,6 @@ a{
     text-decoration: none;
 
 }
-.about{
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
-    margin-top: 4rem;
-    line-height: 30px;
-    font-family: 'Sen', sans-serif;
-}
-
 .item span{
     text-align: center;
 }
@@ -282,9 +280,7 @@ button:focus{
     font-size: 18px;
     font-weight: bold;
 }
-.navbar-light .navbar-toggler{
-    border: none;
-}
+
 .first-cards img{
     margin-left: 31px;
 }
@@ -300,6 +296,19 @@ button:focus{
     width: 100%;
 }
 
+/*------------sobre------------*/
+.about{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 4rem;
+    line-height: 30px;
+    font-family: 'Sen', sans-serif;
+}
+/*------------navbar reponsiva------------*/
+.navbar-light .navbar-toggler{
+    border: none;
+}
 
 /*------------Botões-----------------*/
     .btn{
@@ -364,7 +373,7 @@ button:focus{
     background-color: #ffffff;
     width: 410px;
     box-shadow: 4px 8px 24px #ccc;
-    height: 500px;
+    height: 551px;
     margin: 4rem auto;
 }
 .id{
@@ -443,6 +452,12 @@ input[type="email"]:focus, input[type="password"] {
 .log--button:hover{
     transform: translateY(-5px);
 }
+.botoes p{
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+}
 /*----------modal-----------*/
 .modal-dialog{
     display: flex;
@@ -461,6 +476,62 @@ input[type="email"]:focus, input[type="password"] {
 .modal-footer{
     border: none;
 }
+/*------------Valida cep------------*/
+
+
+.container-cep {
+    max-width: 46rem;
+    margin: 4rem auto;
+    padding: 20px;
+    background-color: #fff;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+  
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    margin-top: 2rem;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .form-group button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #ff008c;
+  }
+  .container-cep h2{
+    color: white;
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
 /*------------------FOOTER-----------------------*/
 footer{
     margin-top: 110px;
@@ -589,6 +660,9 @@ footer.nb-footer .copyright p {
     }
 }
 @media (max-width: 793px) {
+    .container-cep{
+        box-shadow: none;
+    }
     .cards{
         grid-template-columns: repeat(1, 1fr);
         margin-top: 30px;
@@ -609,5 +683,13 @@ footer.nb-footer .copyright p {
     }
     .text-separator h3{
         font-size: 22px;
+    }
+    .id{
+        background-color: transparent;
+        color: #000;
+    }
+    .entrar{
+        width: 363px;
+        box-shadow: none;
     }
 }

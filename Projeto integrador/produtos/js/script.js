@@ -168,14 +168,14 @@ const abrirCarrinho = () => {
     if(cart.length > 0) {
         // mostrar o carrinho
 	    seleciona('aside').classList.add('show')
-        seleciona('header').style.display = 'flex' // mostrar barra superior
+        //seleciona('header').style.display = 'flex' // mostrar barra superior
     }
 
     // exibir aside do carrinho no modo mobile
     seleciona('.menu-openner').addEventListener('click', () => {
         if(cart.length > 0) {
             seleciona('aside').classList.add('show')
-            seleciona('aside').style.left = '0'
+            //seleciona('aside').style.left = '0'
         }
     })
 }
@@ -184,7 +184,7 @@ const fecharCarrinho = () => {
     // fechar o carrinho com o botão X no modo mobile
     seleciona('.menu-closer').addEventListener('click', () => {
         seleciona('aside').style.left = '100vw' // usando 100vw ele ficara fora da tela
-        seleciona('header').style.display = 'flex'
+        //seleciona('header').style.display = 'flex'
     })
 }
 
@@ -282,7 +282,7 @@ const finalizarCompra = () => {
         console.log('Finalizar compra')
         seleciona('aside').classList.remove('show')
         seleciona('aside').style.left = '100vw'
-        seleciona('header').style.display = 'flex'
+        //seleciona('header').style.display = 'flex'
     })
 }
 
